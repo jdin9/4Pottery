@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F9F6F1"/>
+  <rect x="140" y="130" width="420" height="320" stroke="#1F1E1C" stroke-width="10" fill="#FFFFFF"/>
+  <line x1="140" y1="330" x2="560" y2="330" stroke="#1F1E1C" stroke-width="6"/>
+  <text x="200" y="290" font-family="Arial, Helvetica, sans-serif" font-size="76" letter-spacing="6" fill="#1F1E1C">NO.</text>
+  <text x="370" y="300" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" fill="#1F1E1C">4</text>
+  <text x="190" y="390" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="4" fill="#1F1E1C">POTTERY STUDIO</text>
+  <text x="188" y="470" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="6" fill="#1F1E1C">TORONTO • CANADA</text>
+
+  <text x="630" y="230" font-family="Libre Baskerville, Times New Roman, serif" font-size="48" fill="#1F1E1C">No. 4 Pottery Studio</text>
+  <text x="630" y="300" font-family="Work Sans, Arial, sans-serif" font-size="26" fill="#4C4A45">Cozy, elegant pottery for a cottagey city escape.</text>
+  <text x="630" y="350" font-family="Work Sans, Arial, sans-serif" font-size="22" fill="#4C4A45">Toronto, Canada • Studio inquiries & classes</text>
+</svg>
