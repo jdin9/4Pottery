@@ -33,7 +33,7 @@ body {
 .hero-block {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -49,7 +49,7 @@ body {
 .logo {
   width: min(720px, 90vw);
   height: auto;
-  max-height: 72vh;
+  max-height: 80vh;
   object-fit: contain;
   transform-origin: center top;
   transition: transform 0.2s ease-out;
@@ -79,6 +79,15 @@ body {
 
 .intro {
   text-align: center;
+  padding-top: 8px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+body.has-scrolled .intro {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .copy {
@@ -137,7 +146,6 @@ body {
 
 @media (max-width: 600px) {
   .hero-block {
-    gap: 36px;
     min-height: 90vh;
   }
 
