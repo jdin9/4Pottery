@@ -24,31 +24,33 @@ body {
 .page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 64px 24px 96px;
+  padding: 48px 24px 96px;
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 56px;
 }
 
-.hero {
+.hero-block {
   display: flex;
-  justify-content: center;
-  min-height: 70vh;
-  padding-top: 24px;
-  position: relative;
+  flex-direction: column;
+  gap: 48px;
+  min-height: 100vh;
 }
 
 .logo-wrap {
   position: sticky;
-  top: 24px;
+  top: 16px;
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
-  width: min(720px, 92vw);
+  width: min(720px, 90vw);
   height: auto;
+  max-height: 72vh;
+  object-fit: contain;
   transform-origin: center top;
   transition: transform 0.2s ease-out;
 }
@@ -130,13 +132,17 @@ body {
   }
 
   .page {
-    padding: 48px 20px 80px;
+    padding: 40px 20px 80px;
   }
 }
 
 @media (max-width: 600px) {
-  .hero {
-    padding: 28px 24px;
-    min-height: 60vh;
+  .hero-block {
+    gap: 36px;
+    min-height: 90vh;
+  }
+
+  .logo-wrap {
+    top: 12px;
   }
 }
