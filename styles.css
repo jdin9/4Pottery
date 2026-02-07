@@ -1,10 +1,10 @@
 :root {
   color-scheme: light;
-  --ink: #1f1e1c;
-  --ink-soft: #4c4a45;
-  --paper: #f9f6f1;
-  --paper-deep: #f1ebe1;
-  --accent: #b79a7f;
+  --ink: #f7f3e9;
+  --ink-soft: #ded6c6;
+  --paper: #0f2a20;
+  --paper-deep: #173528;
+  --accent: #c7b08b;
 }
 
 * {
@@ -14,9 +14,10 @@
 }
 
 body {
-  font-family: "Work Sans", system-ui, sans-serif;
+  font-family: "Century Gothic", "CenturyGothic", "Apple Gothic", "Futura",
+    "Trebuchet MS", sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at top, #fffdf9, var(--paper));
+  background: radial-gradient(circle at top, #1b3a2c, var(--paper));
   line-height: 1.6;
 }
 
@@ -32,16 +33,12 @@ body {
 .hero {
   display: flex;
   justify-content: center;
+  padding-top: 12px;
 }
 
 .logo {
-  width: min(480px, 90vw);
+  width: min(640px, 92vw);
   height: auto;
-}
-
-.intro h1,
-.intro h2 {
-  font-family: "Libre Baskerville", "Times New Roman", serif;
 }
 
 .eyebrow {
@@ -79,7 +76,6 @@ body {
 }
 
 .form-section h2 {
-  font-family: "Libre Baskerville", "Times New Roman", serif;
   font-size: clamp(1.6rem, 2.2vw, 2.2rem);
   margin-bottom: 12px;
 }
@@ -93,8 +89,8 @@ body {
   background: var(--paper-deep);
   border-radius: 24px;
   padding: 18px;
-  border: 1px solid rgba(31, 30, 28, 0.08);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(247, 243, 233, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(247, 243, 233, 0.08);
   overflow: hidden;
 }
 
@@ -104,7 +100,7 @@ body {
   border: none;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 12px 24px rgba(31, 30, 28, 0.08);
+  box-shadow: 0 12px 24px rgba(9, 22, 16, 0.35);
 }
 
 @media (max-width: 900px) {
