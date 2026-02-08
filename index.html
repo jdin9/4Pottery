@@ -97,7 +97,18 @@
       updateLogoScale();
       const updateLogoCorner = () => {
         const heroRect = hero.getBoundingClientRect();
-        document.body.classList.toggle("logo-corner", heroRect.bottom <= 0);
+        const shouldDock = heroRect.bottom <= 0;
+        if (shouldDock) {
+          if (!document.body.classList.contains("logo-corner")) {
+            document.body.classList.add("logo-corner");
+            requestAnimationFrame(() => {
+              document.body.classList.add("logo-corner-visible");
+            });
+          }
+        } else {
+          document.body.classList.remove("logo-corner-visible");
+          document.body.classList.remove("logo-corner");
+        }
       };
       const toggleIntro = () => {
         document.body.classList.toggle("has-scrolled", window.scrollY > 24);

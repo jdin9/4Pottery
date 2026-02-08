@@ -45,7 +45,7 @@ body {
   justify-content: center;
   width: 100%;
   z-index: 1;
-  transition: transform 0.3s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .logo {
@@ -95,16 +95,21 @@ body.has-scrolled .intro {
 body.logo-corner .logo-wrap {
   position: fixed;
   top: 16px;
-  left: 16px;
+  right: 16px;
   width: auto;
   transform: none;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  opacity: 0;
 }
 
 body.logo-corner .logo {
   width: min(180px, 28vw);
   max-height: none;
   transform: scale(1);
+}
+
+body.logo-corner.logo-corner-visible .logo-wrap {
+  opacity: 1;
 }
 
 .copy {
