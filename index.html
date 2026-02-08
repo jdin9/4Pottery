@@ -27,17 +27,18 @@
   </head>
   <body>
     <main class="page">
-      <header class="hero">
-        <img class="logo" src="Untitled_Artwork 15.png" alt="No. 4 Pottery Studio logo" />
-      </header>
+      <section class="hero-block">
+        <div class="logo-wrap">
+          <img class="logo" src="Untitled_Artwork 15.png" alt="No. 4 Pottery Studio logo" />
+        </div>
+      </section>
 
       <section class="intro">
-        <p class="eyebrow">Toronto, Canada</p>
         <h1>4 Pottery</h1>
         <h2>studio and ceramics</h2>
         <div class="copy">
           <p>
-            4 Pottery is an upcoming community pottery studio focused on hand building,
+            4 Pottery is an upcoming pottery studio focused on hand building,
             creative play, and learning the fundamentals. Whether you’re brand new or already
             deep in your clay era, we’re building a space that’s welcoming, easygoing, and fun.
           </p>
@@ -57,16 +58,20 @@
         <div class="form-header">
           <h2>Studio inquiries</h2>
           <p>
-            Leave a note for classes, commissions, or collaborations. We reply within a few
-            days with available times and next steps.
+            complete the form below to sign up for the waitlist and share what you’re looking
+            for in a studio
+          </p>
+          <p>
+            For any comments, questions, or concerns, email us at
+            <a href="mailto:4potterystudio@gmail.com">4potterystudio@gmail.com</a>.
           </p>
         </div>
         <div class="form-embed">
           <iframe
             title="No. 4 Pottery Studio inquiry form"
             src="https://docs.google.com/forms/d/e/1FAIpQLSdP7NlO-br8Bm8RkcAYC0wtTEcb8Qe7Tmi_OSQovdDP0RYzSQ/viewform?embedded=true"
-            width="640"
-            height="6181"
+            width="1000"
+            height="10000"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
@@ -76,5 +81,36 @@
         </div>
       </section>
     </main>
+    <script>
+      const hero = document.querySelector(".hero-block");
+      const logo = document.querySelector(".logo");
+
+      const updateLogoScale = () => {
+        const heroRect = hero.getBoundingClientRect();
+        const scrollDistance = Math.min(
+          Math.max(0, -heroRect.top),
+          heroRect.height
+        );
+        const progress = Math.min(scrollDistance / (heroRect.height * 0.6), 1);
+        const minScale = 0.38;
+        const maxScale = 1;
+        const scale = maxScale - (maxScale - minScale) * progress;
+        logo.style.transform = `scale(${scale})`;
+      };
+
+      updateLogoScale();
+      const toggleIntro = () => {
+        document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+      };
+
+      toggleIntro();
+      window.addEventListener("scroll", () => {
+        updateLogoScale();
+        toggleIntro();
+      }, { passive: true });
+      window.addEventListener("resize", () => {
+        updateLogoScale();
+      });
+    </script>
   </body>
 </html>
