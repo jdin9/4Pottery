@@ -101,6 +101,7 @@
                   <label><input type="radio" name="entry.1643662217" value="45-54" /> 45-54</label>
                   <label><input type="radio" name="entry.1643662217" value="55-64" /> 55-64</label>
                   <label><input type="radio" name="entry.1643662217" value="65+" /> 65+</label>
+                  <label><input type="radio" name="entry.1643662217" value="Other" /> Other</label>
                 </div>
               </div>
               <div class="field">
@@ -110,6 +111,7 @@
                   <label><input type="radio" name="entry.1081117464" value="Female" /> Female</label>
                   <label><input type="radio" name="entry.1081117464" value="Non Binary" /> Non Binary</label>
                   <label><input type="radio" name="entry.1081117464" value="Prefer not to say" /> Prefer not to say</label>
+                  <label><input type="radio" name="entry.1081117464" value="Other" /> Other</label>
                 </div>
               </div>
             </fieldset>
@@ -124,6 +126,7 @@
                   <label><input type="radio" name="entry.77595335" value="Took a class series" /> Took a class series</label>
                   <label><input type="radio" name="entry.77595335" value="Hobbyist (regularly make at home/studio)" /> Hobbyist</label>
                   <label><input type="radio" name="entry.77595335" value="Advanced/Professional" /> Advanced/Professional</label>
+                  <label><input type="radio" name="entry.77595335" value="Other" /> Other</label>
                 </div>
               </div>
               <div class="field">
@@ -195,15 +198,113 @@
                   <label><input type="radio" name="entry.1458695831" value="Too Expensive" /> Too Expensive</label>
                 </div>
               </div>
-              <label class="field">
-                <span>Preferred Days/Times</span>
-                <select name="entry.842266870">
-                  <option value="">Select one</option>
-                  <option value="Morning">Morning</option>
-                  <option value="Afternoon">Afternoon</option>
-                  <option value="Evening">Evening</option>
-                </select>
-              </label>
+              <div class="field">
+                <span>Preferred Days/Times (check all that apply)</span>
+                <div class="matrix-grid" role="group" aria-label="Preferred Days/Times">
+                  <div class="matrix-corner"></div>
+                  <div class="matrix-header">Morning</div>
+                  <div class="matrix-header">Afternoon</div>
+                  <div class="matrix-header">Evening</div>
+
+                  <div class="matrix-row">Monday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Morning" />
+                    <span class="sr-only">Monday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Afternoon" />
+                    <span class="sr-only">Monday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Evening" />
+                    <span class="sr-only">Monday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Tuesday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Morning" />
+                    <span class="sr-only">Tuesday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Afternoon" />
+                    <span class="sr-only">Tuesday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Evening" />
+                    <span class="sr-only">Tuesday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Wednesday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Morning" />
+                    <span class="sr-only">Wednesday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Afternoon" />
+                    <span class="sr-only">Wednesday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Evening" />
+                    <span class="sr-only">Wednesday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Thursday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Morning" />
+                    <span class="sr-only">Thursday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Afternoon" />
+                    <span class="sr-only">Thursday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Evening" />
+                    <span class="sr-only">Thursday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Friday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Morning" />
+                    <span class="sr-only">Friday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Afternoon" />
+                    <span class="sr-only">Friday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Evening" />
+                    <span class="sr-only">Friday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Saturday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Morning" />
+                    <span class="sr-only">Saturday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Afternoon" />
+                    <span class="sr-only">Saturday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Evening" />
+                    <span class="sr-only">Saturday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Sunday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Morning" />
+                    <span class="sr-only">Sunday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Afternoon" />
+                    <span class="sr-only">Sunday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Evening" />
+                    <span class="sr-only">Sunday Evening</span>
+                  </label>
+                </div>
+              </div>
               <div class="field two-column">
                 <label>
                   <span>What's the earliest you'd want to start?</span>
@@ -255,6 +356,7 @@
                   <label><input type="radio" name="entry.1396126917" value="Instagram" /> Instagram</label>
                   <label><input type="radio" name="entry.1396126917" value="Friend" /> Friend</label>
                   <label><input type="radio" name="entry.1396126917" value="Google" /> Google</label>
+                  <label><input type="radio" name="entry.1396126917" value="Other" /> Other</label>
                 </div>
               </div>
             </fieldset>
