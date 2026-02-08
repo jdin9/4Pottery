@@ -123,6 +123,7 @@ body.has-scrolled .intro {
   box-shadow: none;
   overflow: hidden;
   margin: 0 auto;
+  width: min(1100px, 96vw);
 }
 
 .form-embed iframe {
