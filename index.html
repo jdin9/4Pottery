@@ -69,17 +69,308 @@
           </p>
         </div>
         <div class="form-embed">
-          <iframe
-            title="No. 4 Pottery Studio inquiry form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdP7NlO-br8Bm8RkcAYC0wtTEcb8Qe7Tmi_OSQovdDP0RYzSQ/viewform?embedded=true"
-            width="1000"
-            height="10000"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
+          <form
+            class="custom-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdP7NlO-br8Bm8RkcAYC0wtTEcb8Qe7Tmi_OSQovdDP0RYzSQ/formResponse"
+            method="POST"
+            target="hidden_iframe"
           >
-            Loading…
-          </iframe>
+            <fieldset class="form-group">
+              <legend>About you</legend>
+              <label class="field">
+                <span>Name <span class="required">*</span></span>
+                <input type="text" name="entry.2033050003" autocomplete="name" required />
+              </label>
+              <label class="field">
+                <span>Email <span class="required">*</span></span>
+                <input type="email" name="entry.1106664789" autocomplete="email" required />
+              </label>
+              <div class="field">
+                <span>Do you want to be placed on a waitlist to be notified when registration opens? <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1585125168" value="Yes" required /> Yes</label>
+                  <label><input type="radio" name="entry.1585125168" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>Age <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1643662217" value="18-24" required /> 18-24</label>
+                  <label><input type="radio" name="entry.1643662217" value="25-34" /> 25-34</label>
+                  <label><input type="radio" name="entry.1643662217" value="35-44" /> 35-44</label>
+                  <label><input type="radio" name="entry.1643662217" value="45-54" /> 45-54</label>
+                  <label><input type="radio" name="entry.1643662217" value="55-64" /> 55-64</label>
+                  <label><input type="radio" name="entry.1643662217" value="65+" /> 65+</label>
+                  <label><input type="radio" name="entry.1643662217" value="Other" class="other-trigger" data-other-target="age-other" /> Other</label>
+                </div>
+                <input class="other-input" id="age-other" type="text" name="entry.1643662217.other_option_response" placeholder="Please specify" />
+              </div>
+              <div class="field">
+                <span>Gender <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1081117464" value="Male" required /> Male</label>
+                  <label><input type="radio" name="entry.1081117464" value="Female" /> Female</label>
+                  <label><input type="radio" name="entry.1081117464" value="Non Binary" /> Non Binary</label>
+                  <label><input type="radio" name="entry.1081117464" value="Prefer not to say" /> Prefer not to say</label>
+                  <label><input type="radio" name="entry.1081117464" value="Other" class="other-trigger" data-other-target="gender-other" /> Other</label>
+                </div>
+                <input class="other-input" id="gender-other" type="text" name="entry.1081117464.other_option_response" placeholder="Please specify" />
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>About pottery</legend>
+              <div class="field">
+                <span>How would you describe your pottery experience? <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.77595335" value="Brand New" required /> Brand New</label>
+                  <label><input type="radio" name="entry.77595335" value="Tried a workshop or two" /> Tried a workshop or two</label>
+                  <label><input type="radio" name="entry.77595335" value="Took a class series" /> Took a class series</label>
+                  <label><input type="radio" name="entry.77595335" value="Hobbyist (regularly make at home/studio)" /> Hobbyist</label>
+                  <label><input type="radio" name="entry.77595335" value="Advanced/Professional" /> Advanced/Professional</label>
+                  <label><input type="radio" name="entry.77595335" value="Other" class="other-trigger" data-other-target="experience-other" /> Other</label>
+                </div>
+                <input class="other-input" id="experience-other" type="text" name="entry.77595335.other_option_response" placeholder="Please specify" />
+              </div>
+              <div class="field">
+                <span>What technique are you most interested in learning/developing? Check all that apply. <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="checkbox" name="entry.1931585346" value="Handbuilding basics" /> Handbuilding basics</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Sculptural work" /> Sculptural work</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Functional ware (mugs/bowls/plates)" /> Functional ware</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Larger pieces (planters, vases)" /> Larger pieces</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Surface design (carving, sgraffito, texture)" /> Surface design</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Underglaze/Illustration" /> Underglaze/Illustration</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Glazing/Colour development" /> Glazing/Colour development</label>
+                  <label><input type="checkbox" name="entry.1931585346" value="Special workshops (holiday ornaments, date night, etc.)" /> Special workshops</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>What best describes what you want from a studio? <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1246699688" value="I want to learn skills step-by-step" required /> Learn skills step-by-step</label>
+                  <label><input type="radio" name="entry.1246699688" value="I want a creative space and light guidance" /> Creative space with light guidance</label>
+                  <label><input type="radio" name="entry.1246699688" value="I mostly want independent studio time" /> Independent studio time</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>Which features in the studio matter most to you? Check all that apply. <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="checkbox" name="entry.1419042883" value="Hand-building-focused tables + tools" /> Hand-building tables + tools</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Shelf space for works-in-progress" /> Shelf space for WIP</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Firing services (kiln access / firing included)" /> Firing services</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Glaze station (dip glazes, brush glazes)" /> Glaze station</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Underglaze + surface design area" /> Underglaze + surface area</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Quiet vibe / focused making" /> Quiet vibe</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Social vibe / community nights" /> Social vibe</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Small class sizes" /> Small class sizes</label>
+                  <label><input type="checkbox" name="entry.1419042883" value="Priority booking (early access to register for classes/open studio before the public)" /> Priority booking</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>How important is access to pottery wheels?</span>
+                <p class="field-note">This studio will start by focusing on hand building, and may add wheels as interest grows.</p>
+                <div class="choice-grid scale">
+                  <label><input type="radio" name="entry.1687091349" value="1" /> 1</label>
+                  <label><input type="radio" name="entry.1687091349" value="2" /> 2</label>
+                  <label><input type="radio" name="entry.1687091349" value="3" /> 3</label>
+                  <label><input type="radio" name="entry.1687091349" value="4" /> 4</label>
+                  <label><input type="radio" name="entry.1687091349" value="5" /> 5</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>About scheduling</legend>
+              <div class="field">
+                <span>What studio options would you be interested in? Check all that apply. <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="checkbox" name="entry.358890950" value="6-8 week class series (same time weekly)" /> 6-8 week series</label>
+                  <label><input type="checkbox" name="entry.358890950" value="4 week short series" /> 4 week short series</label>
+                  <label><input type="checkbox" name="entry.358890950" value="One-time workshop" /> One-time workshop</label>
+                  <label><input type="checkbox" name="entry.358890950" value="Open studio sessions (bookable blocks)" /> Open studio sessions</label>
+                  <label><input type="checkbox" name="entry.358890950" value="Membership (monthly)" /> Membership</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>For an 8-week series, would you consider $400 to be... <span class="required">*</span></span>
+                <p class="field-note">Includes a weekly 2–2.5 hour session for 8 weeks, clay + glaze, plus firing handled by a studio manager.</p>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1458695831" value="Too Low" required /> Too Low</label>
+                  <label><input type="radio" name="entry.1458695831" value="Great Value" /> Great Value</label>
+                  <label><input type="radio" name="entry.1458695831" value="Fair" /> Fair</label>
+                  <label><input type="radio" name="entry.1458695831" value="Slightly Expensive" /> Slightly Expensive</label>
+                  <label><input type="radio" name="entry.1458695831" value="Too Expensive" /> Too Expensive</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>Preferred Days/Times (check all that apply)</span>
+                <div class="matrix-grid" role="group" aria-label="Preferred Days/Times">
+                  <div class="matrix-corner"></div>
+                  <div class="matrix-header">Morning</div>
+                  <div class="matrix-header">Afternoon</div>
+                  <div class="matrix-header">Evening</div>
+
+                  <div class="matrix-row">Monday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Morning" />
+                    <span class="sr-only">Monday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Afternoon" />
+                    <span class="sr-only">Monday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Monday, Evening" />
+                    <span class="sr-only">Monday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Tuesday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Morning" />
+                    <span class="sr-only">Tuesday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Afternoon" />
+                    <span class="sr-only">Tuesday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Tuesday, Evening" />
+                    <span class="sr-only">Tuesday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Wednesday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Morning" />
+                    <span class="sr-only">Wednesday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Afternoon" />
+                    <span class="sr-only">Wednesday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Wednesday, Evening" />
+                    <span class="sr-only">Wednesday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Thursday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Morning" />
+                    <span class="sr-only">Thursday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Afternoon" />
+                    <span class="sr-only">Thursday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Thursday, Evening" />
+                    <span class="sr-only">Thursday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Friday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Morning" />
+                    <span class="sr-only">Friday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Afternoon" />
+                    <span class="sr-only">Friday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Friday, Evening" />
+                    <span class="sr-only">Friday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Saturday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Morning" />
+                    <span class="sr-only">Saturday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Afternoon" />
+                    <span class="sr-only">Saturday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Saturday, Evening" />
+                    <span class="sr-only">Saturday Evening</span>
+                  </label>
+
+                  <div class="matrix-row">Sunday</div>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Morning" />
+                    <span class="sr-only">Sunday Morning</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Afternoon" />
+                    <span class="sr-only">Sunday Afternoon</span>
+                  </label>
+                  <label class="matrix-cell">
+                    <input type="checkbox" name="entry.842266870" value="Sunday, Evening" />
+                    <span class="sr-only">Sunday Evening</span>
+                  </label>
+                </div>
+              </div>
+              <div class="field two-column">
+                <label>
+                  <span>What's the earliest you'd want to start?</span>
+                  <input type="time" name="entry.921852205" />
+                </label>
+                <label>
+                  <span>What's the latest you'd want to end?</span>
+                  <input type="time" name="entry.1822450944" />
+                </label>
+              </div>
+              <label class="field">
+                <span>Would you like to add any additional details regarding scheduling?</span>
+                <textarea name="entry.1435173044" rows="3"></textarea>
+              </label>
+              <div class="field">
+                <span>Preferred session length <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1819158192" value="1.5 hours" required /> 1.5 hours</label>
+                  <label><input type="radio" name="entry.1819158192" value="2 hours" /> 2 hours</label>
+                  <label><input type="radio" name="entry.1819158192" value="2.5 hours" /> 2.5 hours</label>
+                  <label><input type="radio" name="entry.1819158192" value="3 hours" /> 3 hours</label>
+                </div>
+              </div>
+              <div class="field">
+                <span>How often would you realistically come? <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1628833166" value="More than once per week" required /> More than once per week</label>
+                  <label><input type="radio" name="entry.1628833166" value="Once per week" /> Once per week</label>
+                  <label><input type="radio" name="entry.1628833166" value="Once per month" /> Once per month</label>
+                  <label><input type="radio" name="entry.1628833166" value="Occasionally" /> Occasionally</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>Final remarks</legend>
+              <label class="field">
+                <span>Whats a dealbreaker?</span>
+                <textarea name="entry.74742913" rows="3"></textarea>
+              </label>
+              <label class="field">
+                <span>Describe your ideal pottery studio</span>
+                <textarea name="entry.12277874" rows="3"></textarea>
+              </label>
+              <div class="field">
+                <span>How did you find us? <span class="required">*</span></span>
+                <div class="choice-grid">
+                  <label><input type="radio" name="entry.1396126917" value="Facebook" required /> Facebook</label>
+                  <label><input type="radio" name="entry.1396126917" value="Instagram" /> Instagram</label>
+                  <label><input type="radio" name="entry.1396126917" value="Friend" /> Friend</label>
+                  <label><input type="radio" name="entry.1396126917" value="Google" /> Google</label>
+                  <label><input type="radio" name="entry.1396126917" value="Other" class="other-trigger" data-other-target="referral-other" /> Other</label>
+                </div>
+                <input class="other-input" id="referral-other" type="text" name="entry.1396126917.other_option_response" placeholder="Please specify" />
+              </div>
+            </fieldset>
+
+            <button class="submit-button" type="submit">Join waitlist</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+          <iframe class="hidden-iframe" name="hidden_iframe" title="hidden"></iframe>
         </div>
       </section>
     </main>
@@ -113,6 +404,38 @@
       window.addEventListener("resize", () => {
         updateLogoScale();
       });
+
+      const customForm = document.querySelector(".custom-form");
+      const formStatus = document.querySelector(".form-status");
+      const otherTriggers = document.querySelectorAll(".other-trigger");
+      const toggleOtherInput = (trigger) => {
+        const targetId = trigger.dataset.otherTarget;
+        const target = targetId ? document.getElementById(targetId) : null;
+        if (!target) return;
+        if (trigger.checked) {
+          target.classList.add("is-visible");
+          target.required = true;
+          target.focus();
+        } else if (!document.querySelector(`input.other-trigger[data-other-target=\"${targetId}\"]:checked`)) {
+          target.classList.remove("is-visible");
+          target.required = false;
+          target.value = "";
+        }
+      };
+
+      otherTriggers.forEach((trigger) => {
+        trigger.addEventListener("change", () => toggleOtherInput(trigger));
+        toggleOtherInput(trigger);
+      });
+
+      if (customForm && formStatus) {
+        customForm.addEventListener("submit", () => {
+          formStatus.textContent =
+            "Thanks for sharing! Your responses have been sent.";
+          formStatus.classList.add("is-visible");
+          setTimeout(() => customForm.reset(), 800);
+        });
+      }
     </script>
   </body>
 </html>
