@@ -61,9 +61,6 @@
             complete the form below to sign up for the waitlist and share what you’re looking
             for in a studio
           </p>
-          <p>
-            for any additional details, comments, questions, concerns, you can email us at 4potterystudio@gmail.com
-          </p>
         </div>
         <div class="form-embed">
           <iframe
@@ -98,6 +95,10 @@
       };
 
       updateLogoScale();
+      const updateLogoCorner = () => {
+        const heroRect = hero.getBoundingClientRect();
+        document.body.classList.toggle("logo-corner", heroRect.bottom <= 0);
+      };
       const toggleIntro = () => {
         document.body.classList.toggle("has-scrolled", window.scrollY > 24);
       };
@@ -105,9 +106,14 @@
       toggleIntro();
       window.addEventListener("scroll", () => {
         updateLogoScale();
+        updateLogoCorner();
         toggleIntro();
       }, { passive: true });
-      window.addEventListener("resize", updateLogoScale);
+      window.addEventListener("resize", () => {
+        updateLogoScale();
+        updateLogoCorner();
+      });
+      updateLogoCorner();
     </script>
   </body>
 </html>

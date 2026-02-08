@@ -41,9 +41,11 @@ body {
   position: sticky;
   top: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   z-index: 1;
+  transition: transform 0.3s ease;
 }
 
 .logo {
@@ -88,6 +90,21 @@ body {
 body.has-scrolled .intro {
   opacity: 1;
   transform: translateY(0);
+}
+
+body.logo-corner .logo-wrap {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: auto;
+  transform: none;
+  justify-content: flex-start;
+}
+
+body.logo-corner .logo {
+  width: min(180px, 28vw);
+  max-height: none;
+  transform: scale(1);
 }
 
 .copy {
