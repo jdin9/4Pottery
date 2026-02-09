@@ -117,10 +117,16 @@ body.has-scrolled .intro {
   position: relative;
   width: min(100%, 860px);
   isolation: isolate;
-  background: var(--paper);
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 24px 60px rgba(10, 24, 18, 0.35);
+}
+
+.waitlist-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #5a9b74;
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 .waitlist h3 {
@@ -131,83 +137,10 @@ body.has-scrolled .intro {
 
 .waitlist-form {
   width: 100%;
-  display: grid;
-  gap: 20px;
+  height: 6181px;
+  border: 0;
 }
 
-.form-card {
-  background: #5a9b74;
-  border-radius: 18px;
-  padding: 18px 20px;
-  text-align: left;
-  color: var(--ink);
-  display: grid;
-  gap: 12px;
-}
-
-.form-card label,
-.form-card__title {
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-.form-card input,
-.form-card textarea {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(15, 42, 32, 0.3);
-  padding: 12px 14px;
-  font-size: 1rem;
-  font-family: inherit;
-  background: rgba(247, 243, 233, 0.9);
-  color: #102920;
-}
-
-.form-card input::placeholder,
-.form-card textarea::placeholder {
-  color: rgba(16, 41, 32, 0.65);
-}
-
-.form-options {
-  display: grid;
-  gap: 10px;
-  font-weight: 500;
-}
-
-.form-options label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.form-options input {
-  width: 18px;
-  height: 18px;
-  accent-color: #0f2a20;
-}
-
-.waitlist-submit {
-  border: none;
-  border-radius: 999px;
-  padding: 14px 24px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  background: #f7f3e9;
-  color: #0f2a20;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.waitlist-submit:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(15, 42, 32, 0.25);
-}
-
-.waitlist-submit:focus-visible {
-  outline: 2px solid #f7f3e9;
-  outline-offset: 3px;
-}
 
 @media (max-width: 900px) {
   .logo {
@@ -226,9 +159,5 @@ body.has-scrolled .intro {
 
   .logo-wrap {
     height: 90vh;
-  }
-
-  .waitlist-frame {
-    padding: 20px;
   }
 }
