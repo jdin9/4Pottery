@@ -57,16 +57,49 @@
       <section class="waitlist">
         <h3>Join the waitlist</h3>
         <div class="waitlist-frame">
-          <iframe
-            class="waitlist-form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdP7NlO-br8Bm8RkcAYC0wtTEcb8Qe7Tmi_OSQovdDP0RYzSQ/viewform?embedded=true"
-            title="4 Pottery waitlist form"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          >
-            Loading…
-          </iframe>
+          <form class="waitlist-form" aria-label="4 Pottery waitlist form">
+            <div class="form-card">
+              <label for="waitlist-name">Full name</label>
+              <input id="waitlist-name" name="name" type="text" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-card">
+              <label for="waitlist-email">Email address</label>
+              <input
+                id="waitlist-email"
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+                required
+              />
+            </div>
+            <div class="form-card">
+              <span class="form-card__title">Ceramics experience</span>
+              <div class="form-options">
+                <label><input type="radio" name="experience" value="new" /> Brand new</label>
+                <label><input type="radio" name="experience" value="some" /> Took a class or two</label>
+                <label><input type="radio" name="experience" value="regular" /> Regular maker</label>
+              </div>
+            </div>
+            <div class="form-card">
+              <label for="waitlist-interest">What kind of classes interest you most?</label>
+              <input
+                id="waitlist-interest"
+                name="interest"
+                type="text"
+                placeholder="Hand-building, glazing, wheel throwing..."
+              />
+            </div>
+            <div class="form-card">
+              <label for="waitlist-notes">Anything else you'd love to see?</label>
+              <textarea
+                id="waitlist-notes"
+                name="notes"
+                rows="4"
+                placeholder="Community events, drop-in hours, memberships..."
+              ></textarea>
+            </div>
+            <button class="waitlist-submit" type="submit">Join the waitlist</button>
+          </form>
         </div>
       </section>
 
