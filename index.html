@@ -110,7 +110,6 @@
       });
 
       let formLoadedOnce = false;
-      let shouldScrollToTop = false;
 
       if (waitlistForm) {
         const initialFormHeight = waitlistForm.offsetHeight;
@@ -130,21 +129,16 @@
           waitlistForm.style.height = `${nextHeight}px`;
         };
 
-        waitlistForm.addEventListener("focus", () => {
-          shouldScrollToTop = true;
-        });
-
         waitlistForm.addEventListener("load", () => {
-          updateWaitlistHeight(formLoadedOnce && shouldScrollToTop);
-          if (formLoadedOnce && shouldScrollToTop) {
+          updateWaitlistHeight(formLoadedOnce);
+          if (formLoadedOnce) {
             window.scrollTo({ top: 0, behavior: "smooth" });
-            shouldScrollToTop = false;
           }
           formLoadedOnce = true;
         });
 
         window.addEventListener("resize", () => {
-          updateWaitlistHeight(formLoadedOnce && shouldScrollToTop);
+          updateWaitlistHeight(formLoadedOnce);
         });
       }
     </script>
