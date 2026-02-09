@@ -113,16 +113,38 @@
       let shouldScrollToTop = false;
 
       if (waitlistForm) {
+        const initialFormHeight = waitlistForm.offsetHeight;
+        const getCompactHeight = () =>
+          Math.min(1600, Math.max(800, window.innerHeight * 1.1));
+
+        const updateWaitlistHeight = (useCompact) => {
+          let nextHeight = useCompact ? getCompactHeight() : initialFormHeight;
+          try {
+            const iframeDoc = waitlistForm.contentWindow?.document;
+            if (iframeDoc?.body?.scrollHeight) {
+              nextHeight = iframeDoc.body.scrollHeight + 24;
+            }
+          } catch (error) {
+            // Cross-origin access can fail; fall back to computed height.
+          }
+          waitlistForm.style.height = `${nextHeight}px`;
+        };
+
         waitlistForm.addEventListener("focus", () => {
           shouldScrollToTop = true;
         });
 
         waitlistForm.addEventListener("load", () => {
+          updateWaitlistHeight(formLoadedOnce && shouldScrollToTop);
           if (formLoadedOnce && shouldScrollToTop) {
             window.scrollTo({ top: 0, behavior: "smooth" });
             shouldScrollToTop = false;
           }
           formLoadedOnce = true;
+        });
+
+        window.addEventListener("resize", () => {
+          updateWaitlistHeight(formLoadedOnce && shouldScrollToTop);
         });
       }
     </script>
