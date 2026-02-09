@@ -119,6 +119,16 @@ body.has-scrolled .intro {
   color: var(--ink);
 }
 
+.waitlist-description {
+  max-width: 720px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.waitlist-description a {
+  color: var(--ink);
+}
+
 .waitlist-form {
   width: min(100%, 860px);
   height: 7600px;
