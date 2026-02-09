@@ -80,6 +80,7 @@
     <script>
       const hero = document.querySelector(".hero-block");
       const logo = document.querySelector(".logo");
+      const waitlistForm = document.querySelector(".waitlist-form");
 
       const updateLogoScale = () => {
         const heroRect = hero.getBoundingClientRect();
@@ -107,6 +108,39 @@
       window.addEventListener("resize", () => {
         updateLogoScale();
       });
+
+      let formLoadedOnce = false;
+
+      if (waitlistForm) {
+        const initialFormHeight = waitlistForm.offsetHeight;
+        const getCompactHeight = () =>
+          Math.min(1600, Math.max(800, window.innerHeight * 1.1));
+
+        const updateWaitlistHeight = (useCompact) => {
+          let nextHeight = useCompact ? getCompactHeight() : initialFormHeight;
+          try {
+            const iframeDoc = waitlistForm.contentWindow?.document;
+            if (iframeDoc?.body?.scrollHeight) {
+              nextHeight = iframeDoc.body.scrollHeight + 24;
+            }
+          } catch (error) {
+            // Cross-origin access can fail; fall back to computed height.
+          }
+          waitlistForm.style.height = `${nextHeight}px`;
+        };
+
+        waitlistForm.addEventListener("load", () => {
+          updateWaitlistHeight(formLoadedOnce);
+          if (formLoadedOnce) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+          formLoadedOnce = true;
+        });
+
+        window.addEventListener("resize", () => {
+          updateWaitlistHeight(formLoadedOnce);
+        });
+      }
     </script>
   </body>
 </html>
