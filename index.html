@@ -80,6 +80,7 @@
     <script>
       const hero = document.querySelector(".hero-block");
       const logo = document.querySelector(".logo");
+      const waitlistForm = document.querySelector(".waitlist-form");
 
       const updateLogoScale = () => {
         const heroRect = hero.getBoundingClientRect();
@@ -107,6 +108,23 @@
       window.addEventListener("resize", () => {
         updateLogoScale();
       });
+
+      let formLoadedOnce = false;
+      let shouldScrollToTop = false;
+
+      if (waitlistForm) {
+        waitlistForm.addEventListener("focus", () => {
+          shouldScrollToTop = true;
+        });
+
+        waitlistForm.addEventListener("load", () => {
+          if (formLoadedOnce && shouldScrollToTop) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            shouldScrollToTop = false;
+          }
+          formLoadedOnce = true;
+        });
+      }
     </script>
   </body>
 </html>
