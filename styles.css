@@ -113,22 +113,6 @@ body.has-scrolled .intro {
   text-align: center;
 }
 
-.waitlist-frame {
-  position: relative;
-  width: min(100%, 860px);
-  isolation: isolate;
-}
-
-.waitlist-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #5a9b74;
-  mix-blend-mode: multiply;
-  opacity: 0.25;
-  pointer-events: none;
-}
-
 .waitlist h3 {
   font-size: clamp(1.6rem, 2.6vw, 2.1rem);
   font-weight: 500;
@@ -136,7 +120,7 @@ body.has-scrolled .intro {
 }
 
 .waitlist-form {
-  width: 100%;
+  width: min(100%, 860px);
   height: 6181px;
   border: 0;
 }
